@@ -1,0 +1,42 @@
+body {
+  background-image: url("../images/fantasy-crystal-field\ \(1\).jpg");
+  background-repeat: no-repeat;
+  background-position: 0;
+  background-size: cover;
+  padding: 20px;
+  color: white;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 255, 0.7);  
+}
+
+/* 119, 136, 153 */
+
+.crystals {
+  display: flex;
+  justify-content: space-around; 
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.crystal {
+  border: 1px solid#78b9f0;
+  height: 200px;
+  width: 200px; 
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 1s; 
+}
+
+.crystal:hover {
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5);
+  transform: translate(5px, 40px);
+
+  cursor: pointer;
+  transition: box-shadow 1s, transform 1s; 
+}
+
