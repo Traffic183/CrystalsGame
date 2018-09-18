@@ -17,30 +17,37 @@ body {
   padding: 20px;
   color: white;
   text-align: center;
+  margin: 0 auto;
 }
 
 .wrapper {
-  max-width: 900px;
-  margin: 30px auto;
-  background-color: rgba(0, 0, 255, 0.7);  
-  padding: 30px 20px;;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background-color: rgba(0, 0, 255, 0.7);   */
+  padding: 10px 10px;;
 }
 
 .crystals {
-  display: flex;
-  justify-content: space-around; 
+  justify-content: center;
+}
+  /* .crystals {
+    justify-content: space-around;  */
+  /* display: inline-block;
+  
   align-items: center;
   margin-top: 30px;
-  margin-bottom: 60px;
-}
+  margin-bottom: 60px; 
+  } */
+
 
 .crystal {
-  border: 1px solid#78b9f0;
+  /* border: 1px solid#78b9f0; */
   height: 200px;
   width: 200px; 
   border-radius: 4px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   transition: box-shadow 1s; 
+  margin: 5px;
 }
 
 .crystal:hover {

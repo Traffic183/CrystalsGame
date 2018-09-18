@@ -3,17 +3,19 @@ var lost = 0;
 var win = 0;
 var previous = 0;
 
-var resetAndStart = function () {
-
-  //empties the crystals
+var resetAndStart = () => {
   $(".crystals").empty();
 
   var images = [
-    'https://www.howtocookthat.net/public_html/wp-content/uploads/2013/03/rock-candy-1024x624.jpg?x19907',
-    'https://usercontent1.hubstatic.com/12368010_f520.jpg',
-    'https://www.wallpaperup.com/uploads/wallpapers/2014/03/24/308116/e21989d2d9da95384b6a06d049384253.jpg',
-    'http://static1.squarespace.com/static/5644b453e4b0552eb81185b6/5646246ce4b0a33eccdedd2d/56521e66e4b058e88fca5228/1449169817525/?format=1000w',
-
+    'https://raw.githubusercontent.com/Traffic183/CrystalsGame/master/assets/images/crystals1.png',
+    'https://raw.githubusercontent.com/Traffic183/CrystalsGame/master/assets/images/crystals2.png',
+    'https://raw.githubusercontent.com/Traffic183/CrystalsGame/master/assets/images/crystals3.png',
+    'https://raw.githubusercontent.com/Traffic183/CrystalsGame/master/assets/images/crystals4.png',
+    'https://raw.githubusercontent.com/Traffic183/CrystalsGame/master/assets/images/crystals5.png',
+    'https://raw.githubusercontent.com/Traffic183/CrystalsGame/master/assets/images/crystals6.png',
+    'https://raw.githubusercontent.com/Traffic183/CrystalsGame/master/assets/images/crystals7.png',
+    'https://raw.githubusercontent.com/Traffic183/CrystalsGame/master/assets/images/crystals8.png',
+    'https://raw.githubusercontent.com/Traffic183/CrystalsGame/master/assets/images/crystals9.png'
   ];
 
   randomResult = Math.floor(Math.random() * 69) + 30;
@@ -24,7 +26,7 @@ var resetAndStart = function () {
   $("#result").html('Magic Number: ' + randomResult);
   //four crystals with four random numbers and the div for the random number
 
-  for (var i = 0; i < 4; i++) {
+  for (var i = 0; i < 9; i++) {
 
     var random = Math.floor(Math.random() * 11) + 1;
 
@@ -32,7 +34,7 @@ var resetAndStart = function () {
 
     var crystal = $("<div>");
     crystal.attr({
-      "class": 'crystal',
+      "class": 'crystal col-4-lg',
       "data-random": random
     });
     crystal.css({
